@@ -89,7 +89,7 @@ body{
 .task{
   display: flex;
   position: relative;
-  height: 10vh;
+  height: auto;
   border: 3px solid black;
   margin: 10px;
   border-radius: 15px;
@@ -103,9 +103,16 @@ body{
   left: 2px ;
 }
 
+.task p{
+  width: 56vh;
+}
+
 .task button{
-  background: radial-gradient(circle, rgba(252,68,68,1) 73%, rgba(130,81,255,0.4767156862745098) 100%); 
+  background: radial-gradient(circle, rgba(252,68,68,1) 73%, rgba(130,81,255,0.4767156862745098) 100%);
+  position: absolute;
+  right: 12px;
   border: none;
+  cursor: pointer;
   border-radius: 10px;
   padding: 10px;
   transition: 0.5s;
@@ -119,5 +126,6 @@ body{
 
 .task button:active{
   transform: scale(0.9);
+  transition: 0.2s;
   box-shadow: rgba(240, 46, 170, 0.4) 0px 0px 0px 5px, rgba(240, 46, 170, 0.3) 0px 0px 0px 10px;
 }
